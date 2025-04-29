@@ -21,6 +21,7 @@ nav{
 
     .nav-menu a {
         display: block; 
+        color: #abd1c6;
         padding: 10px 20px; 
         text-transform: uppercase;
     }
@@ -31,7 +32,8 @@ nav{
     }
     
     .submenu li {
-        list-style: none;
+      background-color: #abd1c6;
+      list-style: none;
     }
     
     .nav-menu li:hover .submenu {
@@ -39,6 +41,7 @@ nav{
     }
     
     .submenu a {
+      color: #001e1d;
         padding: 10px 20px; 
         display: block;
     }
