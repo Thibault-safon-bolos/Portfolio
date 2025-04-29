@@ -32,3 +32,9 @@ a:hover{
 p{
     color: #abd1c6;
 }
+
+#hero{
+    margin-top: 35px;
+    display: flex;
+    
+}
