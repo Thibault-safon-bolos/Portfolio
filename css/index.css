@@ -1,0 +1,18 @@
+
+#hero{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1{
+    font-size: xx-large;
+}
+
+#hero .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

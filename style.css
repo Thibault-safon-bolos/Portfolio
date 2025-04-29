@@ -1,5 +1,6 @@
-@import url("top.css");
-@import url("footer.css");
+@import url("css/top.css");
+@import url("css/footer.css");
+@import url("css/index.css");
 
 *{
     margin: 0;
@@ -21,20 +22,21 @@ main {
     flex: 1;
 }
 
-a{
-    text-decoration: none; /* Permet de ne pas avoir de décoration superflue */
+h1,h2,h3,h4,h5,h6{
+    color: #fffffe;
 }
 
-a:hover{
-    color: #f9bc60;
+a{
+    text-decoration: none; /* Permet de ne pas avoir de décoration superflue */
+    color: #001e1d;
 }
 
 p{
     color: #abd1c6;
 }
 
-#hero{
-    margin-top: 35px;
-    display: flex;
-    
+.btn{
+    background-color: #f9bc60;
+    padding: 10px;
+    border-radius: 0.5rem; /* arrondi des angles */
 }
