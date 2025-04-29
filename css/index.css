@@ -1,9 +1,13 @@
 
-#hero{
-    margin-top: 35px;
+article{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+#hero{
+    margin-top: 35px;
 }
 
 #hero h1{
@@ -16,6 +20,9 @@
     align-items: center;
     flex-direction: column;
 }
+
+
+/*-------------------------------------------------------------------------------------------------------------*/
 
 /* Carousel projet */
 .carousel {
@@ -40,8 +47,8 @@
 }
   
 .carousel-item img {
-    width: 25vw;
-    height: 25vh;
+    object-fit: cover;
+    width: 15vw;
     height: auto;
     border-radius: 0.5rem;
 }
@@ -73,13 +80,11 @@
     margin-top: 0.5rem;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    background-color: #0066cc;
-    color: white;
     border-radius: 0.25rem;
 }
 
 article + article {
-    border-top: 1px solid #ccc;
+    border-top: 3px solid #e16162;
     margin-top: 4rem;
     padding-top: 2rem;
 }  
@@ -88,5 +93,55 @@ article + article {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/*Skill List*/
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    padding-top: 15px;
+  }
+  
+  .tech-list li {
+    background-color: #f0f0f0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+  }
+
+
+  /*-------------------------------------------------------------------------------------------------------------*/
+
+/*About  Brief*/
+
+#about-brief{
+    background-color: #abd1c6;
+}
+
+#about-brief div h2{
+    color: #fffffe;
+    margin-bottom: 1rem;
+}
+
+#about-brief div{
+    background-color: #004643;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 3rem auto;
+    text-align: center;
+  
+}
+
+#about-brief div p{  
+    font-size: 1.1rem;
+    color: #e8e4e6;
+    line-height: 1.6;
 }

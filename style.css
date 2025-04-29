@@ -4,10 +4,10 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #004643;
 }
 
 html, body {
+    background-color: #004643;
     height: 100%;
     margin: 0;
 }
@@ -34,7 +34,7 @@ p{
     color: #abd1c6;
 }
 
-.btn{
+.btn, .btn-small{
     background-color: #f9bc60;
     padding: 10px;
     border-radius: 0.5rem; /* arrondi des angles */
