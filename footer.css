@@ -1,0 +1,38 @@
+
+footer{
+    background-color: #004643;
+    width: 100%;
+    display: flex; 
+
+}
+
+
+.contact {
+    width: 100%;
+    background-size: cover;
+    padding: 10px; 
+}
+
+/* Footer pour ordinateur */
+@media screen and (min-width: 901px) {
+    .contact ul {
+        display: flex; 
+        justify-content: space-evenly; 
+        list-style: none; 
+        align-items: center; 
+    }
+}
+
+/* Footer pour téléphone*/
+@media screen and (max-width: 900px) {
+    .contact ul {
+        display: grid; 
+        list-style: none; 
+        align-items: center; 
+        justify-items: center;
+    }
+    .contact li {
+        padding: 5px;
+        line-height: 1.2;
+    }
+}
