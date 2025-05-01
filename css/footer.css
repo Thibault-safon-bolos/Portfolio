@@ -6,6 +6,9 @@ footer{
 
 }
 
+footer a {
+    color: #abd1c6;
+}
 
 .contact {
     width: 100%;

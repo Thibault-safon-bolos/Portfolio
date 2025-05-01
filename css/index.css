@@ -1,8 +1,5 @@
 
 article{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -15,9 +12,6 @@ article{
 }
 
 #hero .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
@@ -87,13 +81,7 @@ article{
 article + article {
     margin-top: 4rem;
     padding-top: 2rem;
-}  
-
-#featured-projects h2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+}   
 
 /*-------------------------------------------------------------------------------------------------------------*/
 
@@ -119,10 +107,6 @@ article + article {
   /*-------------------------------------------------------------------------------------------------------------*/
 
 /*About  Brief*/
-
-#about-brief{
-    background-color: #abd1c6;
-}
 
 #about-brief div h2{
     color: #fffffe;
