@@ -4,3 +4,25 @@ main{
     background-position: center;
     background-size: contain; 
 }
+/*-------------------------------------------------------------------------------------------------------------*/
+/*Compétence*/
+.ll{
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle; /* Pour mieux aligner avec le texte */
+  }
+  
+.card {
+    background-color: #004643;
+    color: #abd1c6;
+    border-radius: 12px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    break-inside: avoid; /* Empêche la carte d'être coupée entre colonnes */
+  }

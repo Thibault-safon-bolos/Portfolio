@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 a{
-    text-decoration: none; /* Permet de ne pas avoir de décoration superflue */
+    text-decoration: none; 
     color: #001e1d;
 }
 
@@ -48,5 +48,5 @@ p{
 .btn, .btn-small{
     background-color: #f9bc60;
     padding: 10px;
-    border-radius: 0.5rem; /* arrondi des angles */
+    border-radius: 0.5rem;
 }

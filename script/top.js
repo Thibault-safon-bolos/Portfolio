@@ -8,7 +8,7 @@ function includeHTML(selector, url) {
       .then(html => {
         document.querySelector(selector).innerHTML = html;
         // Une fois que le contenu est chargé, on peut initialiser le script pour le menu burger
-        initBurgerMenu();  // Appeler la fonction pour initialiser le menu burger
+        initBurgerMenu();  
       })
       .catch(err => console.error(err));
   }
