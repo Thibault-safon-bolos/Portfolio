@@ -50,3 +50,8 @@ p{
     padding: 10px;
     border-radius: 0.5rem;
 }
+
+article + article {
+    margin-top: 4rem;
+    padding-top: 2rem;
+  }
