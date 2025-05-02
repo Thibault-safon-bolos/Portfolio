@@ -15,7 +15,11 @@ article{
     flex-direction: column;
 }
 
-
+.icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle; /* Pour mieux aligner avec le texte */
+  }
 /*-------------------------------------------------------------------------------------------------------------*/
 
 /* Carousel projet */
