@@ -55,4 +55,34 @@ article + article {
     margin-top: 4rem;
     padding-top: 2rem;
   }
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    padding-top: 15px;
+}
+
   
+.carousel-btn {
+  position: absolute;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 1;
+  font-size: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}

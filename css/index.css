@@ -51,28 +51,18 @@ article{
     height: auto;
     border-radius: 0.5rem;
 }
-  
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #333;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    z-index: 1;
-    font-size: 1.5rem;
-    border-radius: 0.25rem;
+@media screen and (max-width: 900px) {
+  .carousel-btn{
+      padding: 0.5rem 0.5rem;
+      top: 9%;
+  }
 }
-  
-.carousel-btn.prev {
-    left: 10px;
+@media screen and (min-width: 901px) {
+    .carousel-btn{
+        top: 50%;
+    }
 }
-  
-.carousel-btn.next {
-    right: 10px;
-}
+
   
 .btn-small {
     display: inline-block;
@@ -87,15 +77,6 @@ article{
 
 /*Skill List*/
 
-.tech-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    list-style: none;
-    padding: 0;
-    padding-top: 15px;
-  }
-  
   .tech-list li {
     background-color: #f0f0f0;
     padding: 0.75rem 1.5rem;
