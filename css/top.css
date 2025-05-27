@@ -3,6 +3,10 @@ header{
     width: 100%; 
 }
 
+.nav-menu a { 
+  color: #abd1c6;
+}
+
 nav{
     background-size: cover;
     width: 100%; 
@@ -21,7 +25,6 @@ nav{
 
     .nav-menu a {
         display: block; 
-        color: #abd1c6;
         padding: 10px 20px; 
         text-transform: uppercase;
     }
