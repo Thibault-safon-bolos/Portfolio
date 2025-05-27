@@ -107,10 +107,9 @@ td{
   border-radius: 5%;
   background-color: #e8e4e6;
   position: relative;
-  margin: 0 auto;
+  margin: 10px auto 0;
   padding: 0;
   width: fit-content;
-  border-left: 3px solid #555; /* Ligne verticale */
 }
 
 .timeline::before {
@@ -144,7 +143,7 @@ td{
 .timeline summary::before {
   content: '';
   position: absolute;
-  left: -2%;
+  left: -4%;
   top: 0.4rem;
   width: 12px;
   height: 12px;
@@ -179,4 +178,13 @@ td{
 }
 .timeline h2{
   color: #001e1d;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+
+#hobbie img{
+  width: 20%;
+  column-gap: 10%;
+  padding: 10px;
 }
