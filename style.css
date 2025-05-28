@@ -1,5 +1,14 @@
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* IMPORTS */
+
 @import url("css/top.css");
 @import url("css/footer.css");
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* RESET + STRUCTURE DE BASE */
 
 *{
     margin: 0;
@@ -21,6 +30,10 @@ main {
     flex: 1;
 }
 
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* TYPOGRAPHIE + LIENS */
+
 h1,h2,h3,h4,h5,h6{
     color: #fffffe;
 }
@@ -33,6 +46,10 @@ a{
 p{
     color: #abd1c6;
 }
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* LAYOUT UTILITAIRE */
 
 .center{
     display: flex;
@@ -54,7 +71,7 @@ p{
 article + article {
     margin-top: 4rem;
     padding-top: 2rem;
-  }
+}
 
 .tech-list {
     display: flex;
@@ -65,7 +82,26 @@ article + article {
     padding-top: 15px;
 }
 
-  
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* Carousel*/
+
+@media screen and (max-width: 900px) {
+  .carousel-btn{
+      padding: 0.5rem 0.5rem;
+      top: 9%;
+  }
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 50vw;
+    max-width: 900px;
+    margin: 0 auto;
+    height: max-content;
+}
+
 .carousel-btn {
   position: absolute;
   transform: translateY(-50%);
@@ -85,4 +121,27 @@ article + article {
 
 .carousel-btn.next {
   right: 10px;
+}
+
+ol li{
+    list-style: none;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
+/* ICONES */
+
+.icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle; /* Pour mieux aligner avec le texte */
+}
+
+  
+.btn-small {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 0.25rem;
 }

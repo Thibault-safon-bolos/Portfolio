@@ -1,8 +1,4 @@
 
-article{
-    flex-direction: column;
-}
-
 #hero{
     margin-top: 35px;
 }
@@ -11,26 +7,13 @@ article{
     font-size: xx-large;
 }
 
-#hero .container{
+article, #hero .container{
     flex-direction: column;
 }
 
-.icon {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle; /* Pour mieux aligner avec le texte */
-  }
 /*-------------------------------------------------------------------------------------------------------------*/
 
 /* Carousel projet */
-.carousel {
-    position: relative;
-    overflow: hidden;
-    width: 50vw;
-    max-width: 900px;
-    margin: 0 auto;
-    height: 40vh;
-}
   
 .carousel-track {
     display: flex;
@@ -51,27 +34,12 @@ article{
     height: auto;
     border-radius: 0.5rem;
 }
-@media screen and (max-width: 900px) {
-  .carousel-btn{
-      padding: 0.5rem 0.5rem;
-      top: 9%;
-  }
-}
+
 @media screen and (min-width: 901px) {
     .carousel-btn{
         top: 50%;
     }
 }
-
-  
-.btn-small {
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 0.25rem;
-}
-
 
 /*-------------------------------------------------------------------------------------------------------------*/
 

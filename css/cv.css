@@ -2,12 +2,6 @@
 
 /*Compétence*/
 
-.icon {
-    width: 30px;
-    height: 30px;
-    vertical-align: middle; /* Pour mieux aligner avec le texte */
-  }
-  
 .card {
     background-color: #e8e4e6;
     color: #0f3433;
@@ -35,10 +29,6 @@ td{
   margin-bottom: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background-color: #004643;
-  position: relative;
-  overflow: hidden;
-  width: 50vw;
-  max-width: 900px;
 }
 
 .carousel-track {
@@ -62,14 +52,6 @@ td{
   border-radius: 0.5rem;
 }
 
-.btn-small {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  border-radius: 0.25rem;
-}
-
 #skill{
   padding-top: 2rem;
 }
@@ -81,14 +63,9 @@ td{
   }
 }
 
-@media screen and (max-width: 900px) {
-  .carousel-btn{
-      padding: 0.5rem 0.5rem;
-      top: 9%;
-  }
-}
-
 /*-------------------------------------------------------------------------------------------------------------*/
+
+/* TIMELINE (formation) */
 
 .timeline {
   border-radius: 5%;
@@ -171,7 +148,6 @@ td{
 
 
 #hobbie img{
-  width: 20%;
-  column-gap: 10%;
+  width: 10vh;
   padding: 10px;
 }

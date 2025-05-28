@@ -1,0 +1,16 @@
+.center{
+    flex-direction: column;
+}
+
+article{
+    max-width: 50%;
+}
+
+article + article {
+    margin-top: 2rem;
+    padding-top: 0.25rem;
+}
+
+a{
+    color: #f9bc60;
+}
