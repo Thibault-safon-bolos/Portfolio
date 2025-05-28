@@ -20,7 +20,7 @@ function includeHTML(selector, url) {
   
     if (checkbox && hidden) {
       checkbox.addEventListener('change', function () {
-        hidden.classList.toggle('active', checkbox.checked);
+        hidden.classList.toggle('center', checkbox.checked);
       });
     }
   }

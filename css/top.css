@@ -28,29 +28,50 @@ nav{
         padding: 10px 20px; 
         text-transform: uppercase;
     }
-
-    .submenu {
-        display: none;
-        position: absolute;
-    }
-    
-    .submenu li {
-      background-color: #abd1c6;
-      list-style: none;
-    }
-    
-    .nav-menu li:hover .submenu {
-        display: block;
-    }
-    
-    .submenu a {
-      color: #001e1d;
-        padding: 10px 20px; 
-        display: block;
-    }
 }
 
 @media screen and (max-width: 900px) {
+
+  nav.hiden {
+    background-color: #abd1c6;
+    padding: 1rem;
+    border: 2px solid #004643;
+    box-shadow: 
+        inset 0 2px 5px rgba(255, 255, 255, 0.6),
+        inset 0 -2px 5px rgba(0, 0, 0, 0.1),
+        3px 3px 6px rgba(0, 0, 0, 0.2); /* Ombre externe */
+    border-radius: 8px;
+    max-width: 300px;
+    margin: auto;
+}
+
+.menu.nav-menu li {
+    margin: 0.5rem 0;
+    background-color: #0f3433;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    box-shadow: 
+        inset 0 1px 0 #0f3433,
+        inset 0 -1px 0 #ccc,
+        2px 2px 5px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+
+.menu.nav-menu li:hover {
+    transform: translateY(-1px);
+    box-shadow: 
+        inset 0 1px 0 #0f3433,
+        inset 0 -1px 0 #ccc,
+        3px 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+.menu.nav-menu li a {
+    display: block;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+}
+/*--------------------------------------------------------------------------------------------*/
+
     .burger {
       margin: 5px;
       position: relative;
@@ -61,14 +82,18 @@ nav{
       display: block;
     }
 
+    .nav-menu{
+      list-style: none;
+    }
+
+    .nav-menu a{
+      color: #f9bc60;
+      font-size: x-large;
+    }
+
     .hiden {
         display: none;
     }
-
-    .hiden.active {
-        display: block;
-    }
-    
       .burger input {
         display: none;
       }
