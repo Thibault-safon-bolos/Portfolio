@@ -1,4 +1,3 @@
-
 /*-------------------------------------------------------------------------------------------------------------*/
 
 /* IMPORTS */
@@ -8,17 +7,33 @@
 
 /*-------------------------------------------------------------------------------------------------------------*/
 
+:root {
+  /* Color palette */
+  --color-background: #004643;
+  --color-headline: #fffffe;
+  --color-paragraph: #abd1c6;
+  --color-button: #f9bc60;
+  --color-button-text: #001e1d;
+  --color-illustration-stroke: #001e1d;
+  --color-main: #e8e4e6;
+  --color-highlight: #f9bc60;
+  --color-secondary: #abd1c6;
+  --color-tertiary: #e16162;
+}
+
+/*-------------------------------------------------------------------------------------------------------------*/
+
 /* RESET + STRUCTURE DE BASE */
 
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-    background-color: #004643;
+    background-color: var(--color-background);
     height: 100%;
-    margin: 0;
 }
   
 body {
@@ -28,14 +43,15 @@ body {
   
 main {
     flex: 1;
+    background-color: var(--color-main);
 }
 
 /*-------------------------------------------------------------------------------------------------------------*/
 
 /* TYPOGRAPHIE + LIENS */
 
-h1,h2,h3,h4,h5,h6{
-    color: #fffffe;
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-headline);
 }
 
 section h1,
@@ -45,35 +61,38 @@ aside h1 {
   font-size: medium;
 }
 
-
-a{
-    text-decoration: none; 
-    color: #001e1d;
+p {
+    color: var(--color-paragraph);
 }
 
-p{
-    color: #abd1c6;
+a {
+    text-decoration: none;
+    color: var(--color-illustration-stroke);
 }
 
 /*-------------------------------------------------------------------------------------------------------------*/
 
 /* LAYOUT UTILITAIRE */
 
-.center{
+.center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.green-light{
-    background-color: #abd1c6;
-    color: #004643;
-}
-
-.btn, .btn-small{
-    background-color: #f9bc60;
+.btn, .btn-small {
+    background-color: var(--color-button);
+    color: var(--color-button-text);
     padding: 10px;
     border-radius: 0.5rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.btn-small {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
 }
 
 article + article {
@@ -90,16 +109,26 @@ article + article {
     padding-top: 15px;
 }
 
+/* Highlight utility */
+.highlight {
+    background-color: var(--color-highlight);
+    color: var(--color-button-text);
+}
+
+/* Secondary / Tertiary utilities */
+.secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-background);
+}
+
+.tertiary {
+    background-color: var(--color-tertiary);
+    color: var(--color-background);
+}
+
 /*-------------------------------------------------------------------------------------------------------------*/
 
-/* Carousel*/
-
-@media screen and (max-width: 900px) {
-  .carousel-btn{
-      padding: 0.5rem 0.5rem;
-      top: 9%;
-  }
-}
+/* Carousel */
 
 .carousel {
     position: relative;
@@ -108,13 +137,14 @@ article + article {
     max-width: 900px;
     margin: 0 auto;
     height: max-content;
+    background-color: var(--color-main);
 }
 
 .carousel-btn {
   position: absolute;
   transform: translateY(-50%);
-  background: #333;
-  color: white;
+  background: var(--color-illustration-stroke);
+  color: var(--color-headline);
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -131,25 +161,24 @@ article + article {
   right: 10px;
 }
 
-ol li{
+@media screen and (max-width: 900px) {
+  .carousel-btn {
+      padding: 0.5rem 0.5rem;
+      top: 9%;
+  }
+}
+
+ol li {
     list-style: none;
 }
 
 /*-------------------------------------------------------------------------------------------------------------*/
 
-/* ICONES */
+/* ICONES / ILLUSTRATIONS */
 
 .icon {
     width: 30px;
     height: 30px;
-    vertical-align: middle; /* Pour mieux aligner avec le texte */
-}
-
-  
-.btn-small {
-    display: inline-block;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    border-radius: 0.25rem;
+    vertical-align: middle;
+    stroke: var(--color-illustration-stroke);
 }
